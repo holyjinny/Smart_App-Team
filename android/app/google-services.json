@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "843168295838",
+    "project_id": "smart-jtj",
+    "storage_bucket": "smart-jtj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843168295838:android:037cefa94ce3f54c89048f",
+        "android_client_info": {
+          "package_name": "com.jtj.smart_jtj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843168295838-naf9i2a2q1cgj8fts306lg1g17o82qn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtJsVXbXky-Bxx003L5k7owbFHrutMfYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843168295838-naf9i2a2q1cgj8fts306lg1g17o82qn6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
