@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:smart_jtj/config/size_config.dart';
 import 'package:smart_jtj/controller/auth_controller.dart';
 import 'package:smart_jtj/provider/base_view.dart';
+import 'package:smart_jtj/src/screens/home_screen/components/weather_container.dart';
 import 'package:smart_jtj/src/screens/menu_screen/menu_screen.dart';
 import 'package:smart_jtj/src/widgets/custom_bottom_nav_bar.dart';
 import 'package:smart_jtj/view/home_screen_view_model.dart';
@@ -106,10 +107,9 @@ class HomeScreen extends StatelessWidget {
                 Body(
                   model: model,
                 ),
-                Center(
-                  child: Text(
-                    '두 번째 탭 내용',
-                    style: Theme.of(context).textTheme.headline3,
+                Container(
+                  child: SingleChildScrollView(
+                    child: WeatherContainer(),
                   ),
                 ),
                 const Center(

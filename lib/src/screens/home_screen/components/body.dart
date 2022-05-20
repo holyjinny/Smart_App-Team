@@ -4,8 +4,8 @@ import 'package:smart_jtj/src/screens/smart_light_screen/smart_light_screen.dart
 import 'package:smart_jtj/src/screens/temperature_screen/temperature_screen.dart';
 import 'package:smart_jtj/view/home_screen_view_model.dart';
 
+import 'conveyer_container.dart';
 import 'dark_container.dart';
-import 'weather_container.dart';
 
 class Body extends StatelessWidget {
   final HomeScreenViewModel model;
@@ -29,7 +29,7 @@ class Body extends StatelessWidget {
               padding: EdgeInsets.all(
                 getProportionateScreenHeight(5),
               ),
-              child: WeatherContainer(model: model),
+              child: const ConveyerContainer(),
             ),
             Row(
               children: [

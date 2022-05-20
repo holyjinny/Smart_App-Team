@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:smart_jtj/config/size_config.dart';
-import 'package:smart_jtj/src/screens/weather_screen/weather_screen.dart';
+import 'package:smart_jtj/src/screens/conveyer_screen/conveyer_screen.dart';
 
-class WeatherContainer extends StatelessWidget {
-  const WeatherContainer({Key? key}) : super(key: key);
+class ConveyerContainer extends StatelessWidget {
+  const ConveyerContainer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => WeatherScreen()));
+        Navigator.of(context)
+            .pushNamed(ConveyerScreen.routeName);
       },
       child: Stack(
         children: [
@@ -45,7 +45,7 @@ class WeatherContainer extends StatelessWidget {
                     width: getProportionateScreenWidth(90),
                   ),
                   Image.asset(
-                    'assets/images/zoom.png',
+                    'assets/images/jtj_logo.png',
                     height: getProportionateScreenHeight(70),
                     width: getProportionateScreenWidth(70),
                     fit: BoxFit.contain,
