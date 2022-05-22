@@ -22,7 +22,10 @@ class MenuListItems extends StatelessWidget {
         padding: const EdgeInsets.all(15.0),
         child: Row(
           children: [
-            SvgPicture.asset(iconPath),
+            SvgPicture.asset(
+              iconPath,
+              width: 20,
+            ),
             SizedBox(
               width: getProportionateScreenWidth(25),
             ),

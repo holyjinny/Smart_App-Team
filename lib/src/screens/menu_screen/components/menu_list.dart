@@ -31,12 +31,12 @@ class MenuList extends StatelessWidget {
           function: ()=>{},
         ),
         MenuListItems(
-          iconPath: 'assets/icons/menu_icons/stats.svg',
+          iconPath: 'assets/icons/menu_icons/logout_icon.svg',
           itemName: 'Stats',
           function: ()=>{},
         ),
         MenuListItems(
-          iconPath: 'assets/icons/menu_icons/logout_btn.svg',
+          iconPath: 'assets/icons/menu_icons/logout_icon.svg',
           itemName: 'Logout',
           function: () => {
             AuthController.instance.logOut(),

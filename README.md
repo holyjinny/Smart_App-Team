@@ -10,7 +10,7 @@ Arduino + Android / IOS + Web 로 프로젝트 구성.
 Error: ADB exited with exit code 1
 Performing Streamed Install
 
-adb: failed to install /Users/youngjin/StudioProjects/smart_jtj/build/app/outputs/flutter-apk/app.apk: Failure [INSTALL_FAILED_INSUFFICIENT_STORAGE]
+adb: failed to install $Path/flutter-apk/app.apk: Failure [INSTALL_FAILED_INSUFFICIENT_STORAGE]
 Error launching application on sdk gphone64 arm64.
 
 해결 방안 : Device Manager - 해당 Emulator - Wipe Data.

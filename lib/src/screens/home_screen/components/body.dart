@@ -4,7 +4,7 @@ import 'package:smart_jtj/src/screens/smart_light_screen/smart_light_screen.dart
 import 'package:smart_jtj/src/screens/temperature_screen/temperature_screen.dart';
 import 'package:smart_jtj/view/home_screen_view_model.dart';
 
-import 'conveyer_container.dart';
+import 'conveyor_container.dart';
 import 'dark_container.dart';
 
 class Body extends StatelessWidget {

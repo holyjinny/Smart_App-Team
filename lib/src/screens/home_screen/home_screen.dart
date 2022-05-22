@@ -81,13 +81,13 @@ class HomeScreen extends StatelessWidget {
                     ),
                     Tab(
                       child: Text(
-                        '주방',
+                        'Dashboard',
                         style: Theme.of(context).textTheme.headline4,
                       ),
                     ),
                     Tab(
                       child: Text(
-                        '안방',
+                        'Function',
                         style: Theme.of(context).textTheme.headline4,
                       ),
                     ),
@@ -109,11 +109,13 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Container(
                   child: SingleChildScrollView(
-                    child: WeatherContainer(),
+                    child: Text('아직 비어있음'),
                   ),
                 ),
-                const Center(
-                  child: Text('세 번째 탭 내'),
+                Container(
+                  child: SingleChildScrollView(
+                    child: WeatherContainer(),
+                  ),
                 ),
               ],
             ),

@@ -44,11 +44,12 @@ class WeatherContainer extends StatelessWidget {
                   SizedBox(
                     width: getProportionateScreenWidth(90),
                   ),
-                  Image.asset(
-                    'assets/images/zoom.png',
-                    height: getProportionateScreenHeight(70),
-                    width: getProportionateScreenWidth(70),
-                    fit: BoxFit.contain,
+                  Text(
+                    'Weather\nDetails',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ],
               ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_jtj/config/size_config.dart';
-import 'package:smart_jtj/src/screens/conveyer_screen/conveyer_screen.dart';
+import 'package:smart_jtj/src/screens/conveyor_screen/conveyor_screen.dart';
 
 class ConveyerContainer extends StatelessWidget {
   const ConveyerContainer({Key? key}) : super(key: key);
@@ -9,8 +9,7 @@ class ConveyerContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context)
-            .pushNamed(ConveyerScreen.routeName);
+        Navigator.of(context).pushNamed(ConveyorScreen.routeName);
       },
       child: Stack(
         children: [
@@ -44,12 +43,19 @@ class ConveyerContainer extends StatelessWidget {
                   SizedBox(
                     width: getProportionateScreenWidth(90),
                   ),
-                  Image.asset(
-                    'assets/images/jtj_logo.png',
-                    height: getProportionateScreenHeight(70),
-                    width: getProportionateScreenWidth(70),
-                    fit: BoxFit.contain,
+                  Text(
+                    'Control\nConveyor',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
+                  // Image.asset(
+                  //   'assets/images/jtj_logo.png',
+                  //   height: getProportionateScreenHeight(70),
+                  //   width: getProportionateScreenWidth(70),
+                  //   fit: BoxFit.contain,
+                  // ),
                 ],
               ),
             ),
@@ -59,8 +65,8 @@ class ConveyerContainer extends StatelessWidget {
               left: 30,
             ),
             child: Image.asset(
-              'assets/images/weather/sunny_2d.png',
-              height: getProportionateScreenHeight(110),
+              'assets/images/joystick.png',
+              height: getProportionateScreenHeight(100),
               width: getProportionateScreenWidth(100),
               fit: BoxFit.contain,
             ),
