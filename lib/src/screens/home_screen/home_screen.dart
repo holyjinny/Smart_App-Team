@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:smart_jtj/config/size_config.dart';
-import 'package:smart_jtj/controller/auth_controller.dart';
 import 'package:smart_jtj/provider/base_view.dart';
+import 'package:smart_jtj/src/screens/home_screen/components/chart_container.dart';
 import 'package:smart_jtj/src/screens/home_screen/components/weather_container.dart';
-import 'package:smart_jtj/src/screens/menu_screen/menu_screen.dart';
+import 'package:smart_jtj/src/screens/setting_screen/setting_screen.dart';
 import 'package:smart_jtj/src/widgets/custom_bottom_nav_bar.dart';
 import 'package:smart_jtj/view/home_screen_view_model.dart';
 import 'components/body.dart';
@@ -37,10 +37,16 @@ class HomeScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    Image.asset(
+                      'assets/images/jtj_logo.png',
+                      width: 60,
+                      height: 60,
+                    ),
                     Text(
-                      email,
+                      'SMART JTJ',
                       style: TextStyle(
                         fontSize: 20,
+                        fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
                     ),
@@ -60,7 +66,8 @@ class HomeScreen extends StatelessWidget {
                           color: Colors.amber,
                         ),
                         onPressed: () {
-                          AuthController.instance.logOut();
+                          Navigator.of(context)
+                              .pushNamed(SettingScreen.routeName);
                         },
                       ),
                     ),
@@ -82,13 +89,13 @@ class HomeScreen extends StatelessWidget {
                     Tab(
                       child: Text(
                         'Dashboard',
-                        style: Theme.of(context).textTheme.headline4,
+                        style: Theme.of(context).textTheme.headline3,
                       ),
                     ),
                     Tab(
                       child: Text(
                         'Function',
-                        style: Theme.of(context).textTheme.headline4,
+                        style: Theme.of(context).textTheme.headline3,
                       ),
                     ),
                   ],
@@ -98,10 +105,6 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            drawer: SizedBox(
-              width: getProportionateScreenWidth(270),
-              child: const Menu(),
-            ),
             body: TabBarView(
               children: [
                 Body(
@@ -109,7 +112,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Container(
                   child: SingleChildScrollView(
-                    child: Text('아직 비어있음'),
+                    child: ChartContainer(),
                   ),
                 ),
                 Container(

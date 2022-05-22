@@ -20,6 +20,7 @@ dependencies:
   flutter_glow: ^0.2.0
   http: ^0.13.4
   intl: ^0.17.0
+  syncfusion_flutter_charts: ^20.1.56
 
   # Firebase
   firebase_core: ^1.17.0

@@ -22,3 +22,11 @@ Searching for inspections failed: undefined method `map' for nil:NilClass
 해결 방안
 1. sudo arch -x86_64 gem install ffi (Terminal)
 2. arch -x86_64 pod install (ios 폴더 위치에서)
+
+##### Error 3
+git push -u origin master
+To https://github.com/holyjinny/Smart_App-Team.git
+! [rejected]        master -> master (fetch first)
+이유 : 기존데이터가 손실 될 수 있어서 Push를 막을 것.
+
+해결 방안 : $ git push origin +master (강제 Push)
